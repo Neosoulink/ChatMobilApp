@@ -5,7 +5,7 @@ import { Ionicons } from '@expo/vector-icons';
 const LoginScreen = (props) => {
 	const [name, setName] = useState('');
 	const next = () => {
-		if (name && name.length >= 5) return props.navigation.navigate("ChatScreen", { name: name });
+		if (name && name.length >= 5) return props.navigation.navigate("ChatScreen", { name });
 		ToastAndroid.show("Please, your name must be not empty and > 4 letters!", ToastAndroid.SHORT)
 	}
 
